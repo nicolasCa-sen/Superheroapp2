@@ -16,7 +16,6 @@ class Detalles extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: Image.network(hero.photoUrl),
           ),
-
           const SizedBox(height: 20),
 
           Text(

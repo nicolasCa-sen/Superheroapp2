@@ -18,11 +18,15 @@ class ContenedorInformacion extends StatelessWidget {
           MaterialPageRoute(builder: (context) => DetailPage(hero: hero)),
         );
       },
-      child: Column(
-        children: [
-          Tarjeta(imageUrl: hero.photoUrl),
-          Descripcion(descripcion: hero.description),
-        ],
+      child: SizedBox(
+        //height: 2,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Tarjeta(imageUrl: hero.photoUrl),
+            Descripcion(descripcion: hero.description),
+          ],
+        ),
       ),
     );
   }

@@ -7,9 +7,17 @@ class Descripcion extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(bottom: 5),
-      child: Text(descripcion, style: MainTextdecoration.textodescripcion),
+    return Flexible(
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.only(bottom: 5),
+        child: Text(
+          descripcion,
+          style: MainTextdecoration.textodescripcion,
+          overflow: TextOverflow.ellipsis, // O usa fade
+          maxLines: 2, // Limita el número de líneas
+        ),
+      ),
     );
   }
 }

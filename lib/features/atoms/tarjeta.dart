@@ -7,7 +7,7 @@ class Tarjeta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 150,
+      //    width: 150,
       margin: const EdgeInsets.only(top: 20, bottom: 14, left: 20, right: 20),
       decoration: BoxDecoration(),
       child: ClipRRect(
